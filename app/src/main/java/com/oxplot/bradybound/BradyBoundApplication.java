@@ -101,6 +101,7 @@ public class BradyBoundApplication extends Application {
                         + "/s -j DROP >/dev/null && echo " + CHECK_LABEL + "\n";
 
                 Log.d(TAG,"InstallScript- CMD: "+cmd);
+                Log.d(TAG,"InstallScript- CMD: "+cmd);
                 outs.write(cmd);
                 outs.flush();
                 if (!CHECK_LABEL.equals(ins.readLine())) {
